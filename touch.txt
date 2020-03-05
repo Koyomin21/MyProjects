@@ -1,0 +1,14 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 02E0-A2A2
+
+ Directory of C:\Users\€­ã à\Desktop\Git
+
+05-Mar-20  03:09 PM    <DIR>          .
+05-Mar-20  03:09 PM    <DIR>          ..
+04-Mar-20  09:05 PM                16 TEst.txt
+05-Mar-20  03:08 PM               395 touch.tx
+05-Mar-20  03:09 PM                 0 touch.txt
+               3 File(s)            411 bytes
+               2 Dir(s)  169,731,526,656 bytes free
+asafasfas,
+afafm
