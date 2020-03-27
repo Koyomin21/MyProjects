@@ -1,0 +1,35 @@
+{
+	"question_1": {
+		"question": "2 + 2 = ?",
+		"answer": "4"
+	},
+	"question_2": {
+		"question": "why are you gay?",
+		"answer": "I am not gay!"
+    },
+    "question_3":{
+        "question": "The greatest rapper except Anuar?",
+        "answer": "eminem"
+    },
+    "question_4":{
+        "question":"What is my favourite color",
+        "answer":"red"
+    },
+    "question_5":{
+        "question":"How many World Cups has Brazil?",
+        "answer":"5"
+    },
+    "question_6":{
+        "question":"The best portugal player",
+        "answer":"Ronaldo"
+    },
+    "question_7":{
+        "question":"Who caught a coronavirus in Juventus(surname)?",
+        "answer":"Rugani"
+    },
+    "question_8":{
+        "question":"Megan Fox or Camilla Cabello?",
+        "answer":"J Lo"
+    }
+	
+}
