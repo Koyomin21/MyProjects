@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap")
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Titillium', sans-serif;
+
+}
+
+.container {
+    width: 1250px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+}
+
+.logo {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-right: 2rem;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header nav a {
+    display: block;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 5px;
+    background-color: #f55;
+    transition: width 0.25s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+.slides {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    height: 650px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.stats {
+    padding: 3rem;
+    grid-gap: 2rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+}
+
+.stat .big-icon {
+    margin-right: 2rem;
+}
+
+.big-icon {
+    width: 100px;
+    height: 100px;
+    /* background-color:black; */
+}
+
+
+.big-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #f55;
+}
+
+.big-number::after {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 2px;
+    background-color: #f55;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.icons {
+    padding: 1rem;
+    justify-content: space-around;
+    background-color: #000;
+    color: #fff;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.icon {
+    padding: 1rem;
+    text-align: center;
+}
+
+.about {
+    padding: 3rem;
+}
+
+.about h1 {
+    font-size: 3rem;
+    color: #f55;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.order {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/gymnastka.jpg');
+    color: #fff;
+}
+
+.order h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.order > * {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: block;
+    width: 300px;
+    padding: 0.75rem 1.5rem;
+    background-color: #f55;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.gallery img {
+    display: block;
+    width: 16.6%;
+    height: 250px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.social img {
+    width: 36px;
+    background-color: #000;
+    border-radius: 200%;
+}
+
+.about-page {
+    padding: 2rem;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.about-page > * {
+    margin-bottom: 2rem;
+}
+
+.about-page h1 {
+    margin-bottom: 2rem;
+    color: #f55;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-page p {
+    margin-bottom: 2rem;
+}
+
+.about-page img {
+    float: right;
+}
+
+.about-page ul {
+    margin-left: 2rem;
+    color: #f55;
+    text-transform: uppercase;
+    list-style: square;
+}
+
+.about-page .lists {
+    display: flex;
+}
+
+.about-page .lists ul {
+    color: #000;
+    text-transform: unset;
+    list-style-type: none;
+}
+
+.about-page .lists ul li {
+    margin-bottom: 1rem;
+    background: url("images/icons/check.svg") no-repeat;
+    background-size: 35px;
+    padding-left: 3rem;
+}
+
+.card {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.card > * {
+    margin-bottom: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card a {
+    color: #f55;
+    text-decoration: none;
+}
+
+.plan {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.plan th, .plan td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.plan th {
+    color: #fff;
+    background-color: #f55;
+}
+
+.plan td {
+    background-color: #eee;
+}
+
+.contact-form {
+    position: relative;
+    width: auto;
+    margin: 2rem auto;
+    padding: 2rem 100px 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/fitnessgym3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    align-items: center;
+}
+
+.contact-form p {
+    font-size: 1.5rem;
+    border: none;
+}
+
+.contact-form > * {
+    display: block;
+    width: 600px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    outline: none;
+}
+
+.contact-form input::placeholder {
+    color: #fff;
+}
+
+.contact-form button {
+    background-color: #f55;
+    width: 200px;
+}
+
+.contacts {
+    width: 300px;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    padding: 4rem 2rem;
+    font-size: 1.25rem;
+    background-color: #fff;
+    color: #000;
+}
+
+.contacts > * {
+    margin-bottom: 1rem
+}
+
+.contacts p:last-child {
+    margin: none;
+}
+
+.login-wrapper, .register-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.login-form img, .register-form img {
+    width: 100px;
+}
+
+.login-form > *, .register-form > * {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.login-form button, .register-form button {
+    margin-bottom: 0;
+    background-color: #f55;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
