@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 995320154,
+      "message": {
+        "message_id": 3,
+        "from": {
+          "id": 342283076,
+          "is_bot": false,
+          "first_name": "Anuar",
+          "last_name": "Borangaziyev",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 342283076,
+          "first_name": "Anuar",
+          "last_name": "Borangaziyev",
+          "type": "private"
+        },
+        "date": 1590396093,
+        "text": "ds"
+      }
+    },
+    {
+      "update_id": 995320155,
+      "message": {
+        "message_id": 4,
+        "from": {
+          "id": 342283076,
+          "is_bot": false,
+          "first_name": "Anuar",
+          "last_name": "Borangaziyev",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 342283076,
+          "first_name": "Anuar",
+          "last_name": "Borangaziyev",
+          "type": "private"
+        },
+        "date": 1590396096,
+        "text": "hello"
+      }
+    },
+    {
+      "update_id": 995320156,
+      "message": {
+        "message_id": 5,
+        "from": {
+          "id": 342283076,
+          "is_bot": false,
+          "first_name": "Anuar",
+          "last_name": "Borangaziyev",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 342283076,
+          "first_name": "Anuar",
+          "last_name": "Borangaziyev",
+          "type": "private"
+        },
+        "date": 1590396174,
+        "text": "yo"
+      }
+    }
+  ]
+}
